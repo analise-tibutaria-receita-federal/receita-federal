@@ -59,7 +59,7 @@ def unzip_files(zip_file_path):
         zip_ref.extractall(extract_path)
         extracted_files = zip_ref.namelist()
 
-    print(f"📂 Arquivos extraídos em: {extract_path}")
+    print(f" Arquivos extraídos em: {extract_path}")
     return extract_path if extracted_files else None
 
 

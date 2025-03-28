@@ -2,9 +2,12 @@ import os
 import re
 import requests
 from bs4 import BeautifulSoup 
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Caminho principal
-_PATH = os.getenv['_PATH']
+_PATH = os.getenv('_PATH')
 RAW = os.path.join(_PATH, 'raw')  # Criar caminho para a pasta 'raw'
 root_url = "https://arquivos.receitafederal.gov.br/dados/cnpj/dados_abertos_cnpj/2023-05/"
 
